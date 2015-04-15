@@ -141,7 +141,7 @@ $.loginSuccessAction = function(_options) {
  *
  */
 $.userNotLoggedInAction = function() {
-  debugger;
+
   // open the login controller to login the user
   if (!$.loginController) {
     var loginController = Alloy.createController("login", {

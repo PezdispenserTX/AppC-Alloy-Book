@@ -73,7 +73,7 @@ function handleLocationButtonClicked(_event) {
 
   var collection = Alloy.Collections.instance("Photo");
   var model = collection.get(_event.row.row_id);
-  debugger;
+
 
   var customFields = model.get("custom_fields");
 

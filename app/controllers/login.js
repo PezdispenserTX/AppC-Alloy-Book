@@ -91,7 +91,7 @@ function doFacebookLoginAction(_options) {
 
   if (FB.loggedIn === false) {
 
-    debugger;
+
 
     /// Enabling single sign on using FB
     FB.forceDialogAuth = false;
@@ -109,7 +109,7 @@ function doFacebookLoginAction(_options) {
     FB.authorize();
 
   } else {
-    debugger;
+
     var user = Alloy.createModel('User');
     user.updateFacebookLoginStatus(FB.accessToken, {
       success : function(_resp) {
@@ -176,6 +176,6 @@ $.open = function(_reset) {
   $.index.open();
 };
 $.close = function() {
-  debugger;
+
   $.index.close();
 };
